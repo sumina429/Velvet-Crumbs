@@ -1,0 +1,192 @@
+* {
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f7fb;
+            color: #222;
+        }
+
+        /* --- HEADER --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .brand {
+            font-weight: 500;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            color: #be9b5e;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .brand img {
+            height: 64px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .user-pill {
+            background: #3b82f6;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .logout-link {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: 0.2s all;
+        }
+
+        .logout-link:hover {
+            background: #f8e8e8;
+            color: #ea3333;
+        }
+        /* --- HEADER END --- */
+
+        .dashboard-header {
+            background: linear-gradient(90deg, #d8439b 0%, #a044ff 100%);
+            padding: 20px 40px 60px 40px;
+            color: white;
+        }
+
+        .tabs {
+            background: #fff;
+            max-width: 1152px;
+            margin: -30px auto 30px;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            height: 60px;
+            align-items: center;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #666;
+            font-size: 15px;
+            font-weight: 500;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tabs a:hover {
+            color: #9333ea;
+        }
+
+        .tabs a.active {
+            color: #9333ea;
+            border-bottom-color: #9333ea;
+            font-weight: 600;
+        }
+
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .order-table th {
+            background-color: #c6538c;
+            color: white;
+            font-weight: 500;
+            padding: 18px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .order-table td {
+            padding: 16px;
+            text-align: center;
+            border: 1px solid #f1f5f9;
+            color: #4a5568;
+            font-size: 14px;
+        }
+
+        .status-select-wrapper {
+            position: relative;
+            display: inline-block;
+            min-width: 110px;
+        }
+
+        .status-select {
+            border: none;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            /* Add extra right padding for arrow visibility */
+            padding: 8px 38px 8px 24px;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
+            cursor: pointer;
+            appearance: none;
+            outline: none;
+            min-width: 110px;
+            /* remove default select arrow for a custom one */
+            background: none;
+        }
+
+        /* Custom arrow as SVG background, placed right, with extra right padding in select above */
+        .status-select-wrapper::after {
+            content: '';
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            width: 13px;
+            height: 13px;
+            transform: translateY(-50%);
+            background: url('data:image/svg+xml;utf8,<svg fill="gray" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><polygon points="5,7 10,12 15,7"/></svg>') no-repeat center/1em auto;
+        }
+
+        /* Fallback classes for each status, but primary colors set inline */
+        .status-pending {
+            background: #fffbe7 !important;
+            color: #b26c00 !important;
+        }
+        .status-processing {
+            background: #e6f4ff !important;
+            color: #026aa7 !important;
+        }
+        .status-shipped {
+            background: #e5fbe6 !important;
+            color: #199f3a !important;
+        }
+        .status-delivered {
+            background: #e6fffb !important;
+            color: #08979c !important;
+        }
+        .status-cancelled {
+            background: #ffebee !important;
+            color: #d32f2f !important;
+        }

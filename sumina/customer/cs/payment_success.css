@@ -1,0 +1,93 @@
+ body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #fdf2f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .checkout-card,
+        .success-card {
+            background: white;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Checkout Styles */
+        h1 {
+            color: #d84b90;
+            text-align: center;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .place-order-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #f18063 0%, #d84b90 100%);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Success Page Styles  */
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            background: #e6fffa;
+            color: #38a169;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 30px;
+        }
+
+        .order-details {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .order-id-badge {
+            background: #eee;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-track {
+            background: #d84b90;
+            color: white;
+            flex: 1;
+            padding: 12px;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }

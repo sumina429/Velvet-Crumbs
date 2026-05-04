@@ -1,0 +1,164 @@
+* {
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            background: #f6f7fb;
+            color: #222;
+        }
+
+        /* --- HEADER --- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .brand {
+            font-weight: 500;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            color: #be9b5e;
+            word-spacing: 5px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .brand img {
+            height: 64px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .user-pill {
+            background: #3b82f6;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .logout-link {
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+            padding: 6px 10px;
+            border-radius: 6px;
+            transition: 0.2s all;
+        }
+
+        .logout-link:hover {
+            background: #f8e8e8;
+            color: #ea3333;
+        }
+        /* --- HEADER END --- */
+
+        /* --- GRADIENT HERO BANNER --- */
+        .hero-banner {
+            background: linear-gradient(90deg, #d8439b 0%, #a044ff 100%);
+            padding: 30px 40px 70px 40px;
+            color: white;
+        }
+
+        .hero-banner h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .hero-banner p {
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+
+        /* --- TABS SYSTEM --- */
+        .tabs-container {
+            background: #fff;
+            max-width: 1200px;
+            margin: -35px auto 30px;
+            padding: 0 25px;
+            display: flex;
+            gap: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            height: 65px;
+            align-items: center;
+        }
+
+        .tab-link {
+            text-decoration: none;
+            color: #777;
+            font-size: 15px;
+            font-weight: 500;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            border-bottom: 4px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .tab-link.active {
+            color: #9333ea;
+            border-bottom-color: #9333ea;
+            font-weight: 700;
+        }
+
+        .tab-link:hover {
+            color: #9333ea;
+        }
+
+        /* --- CONTENT CARDS --- */
+        .section-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03);
+            border: 1px solid #f0f0f0;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #b34d85;
+            margin-bottom: 25px;
+        }
+
+        /* --- TABLE STYLING --- */
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .order-table th {
+            background-color: #c6538c;
+            color: white;
+            padding: 15px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .order-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #f1f1f1;
+            color: #555;
+            font-size: 14px;
+        }
